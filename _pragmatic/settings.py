@@ -116,6 +116,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# 콜렉트스태틱을 실행하면 STATIC_ROOT에 등록된 디렉토리에 복사된다.
+# 참고로 STATIC_ROOT 경로는 STATICFILES_DIRS 와 달라야 한다.
+STATIC_ROOT = BASE_DIR / 'staticfiles' #(최신)
+
+# 앱에 종속되어있지 않은 스태틱폴더를 별도로 만드는거래
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
