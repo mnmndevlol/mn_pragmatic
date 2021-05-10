@@ -136,3 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
 LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
+
+
+MEDIA_URL = '/media/' # url경로가 뭐뭐뭐/media/뭐뭐뭐 이렇게 되는거
+MEDIA_ROOT = BASE_DIR / 'media' # 어느 경로에 저장될건지
