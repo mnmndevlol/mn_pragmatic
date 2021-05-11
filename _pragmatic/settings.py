@@ -24,7 +24,10 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
+
+
 
 
 # Application definition
@@ -39,6 +42,8 @@ INSTALLED_APPS = [
     'accountapp',
     'bootstrap4',
     'profileapp',
+    'articleapp',
+
 ]
 
 MIDDLEWARE = [
@@ -141,3 +146,7 @@ LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
 
 MEDIA_URL = '/media/' # url경로가 뭐뭐뭐/media/뭐뭐뭐 이렇게 되는거
 MEDIA_ROOT = BASE_DIR / 'media' # 어느 경로에 저장될건지
+
+# Override default port for `runserver` command
+# from django.core.management.commands.runserver import Command as runserver
+# runserver.default_port = "8004"
