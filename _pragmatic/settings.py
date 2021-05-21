@@ -22,7 +22,7 @@ environ.Env.read_env(str(BASE_DIR.joinpath('.env')))
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['*', '158.247.227.51']
