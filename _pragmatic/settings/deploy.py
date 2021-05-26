@@ -27,7 +27,7 @@ ALLOWED_HOSTS = ['*', '158.247.227.51']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django', # 우리가 연결하는 mariadb 내에서 이 이름으로 만들거다.
         'USER': 'django', # 그냥 django로 하겠습니다.
         'PASSWORD': 'roqkf1234', #
