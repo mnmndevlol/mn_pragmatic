@@ -19,7 +19,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['*', '158.247.227.51']
+ALLOWED_HOSTS = ['*']
 
 
 # Database
@@ -28,10 +28,10 @@ ALLOWED_HOSTS = ['*', '158.247.227.51']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django', # 우리가 연결하는 mariadb 내에서 이 이름으로 만들거다.
-        'USER': 'django', # 그냥 django로 하겠습니다.
-        'PASSWORD': 'roqkf1234', #
-        'HOST': 'mariadb', # 장고 컨테이너 이름으로 연결된다고 했었듯이 여기에 mariadb의 컨테이너 이름을 정해준다.
-        'PORT': '3306', # 포트는 3306이 보통 mysql 기본인듯. 어딜가도 맨날 이 포트임.
+        'NAME': 'django',
+        'USER': 'django',
+        'PASSWORD': 'roqkf1234',
+        'HOST': 'mariadb',
+        'PORT': '3306',
     }
 }
